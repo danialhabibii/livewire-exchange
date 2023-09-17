@@ -1,0 +1,1225 @@
+@layer components {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+
+    .Home {
+        @apply w-full h-full flex items-center justify-center bg-[#e4e4e5]
+    }
+
+    .dashboard_container {
+        @apply w-full h-full flex flex-col overflow-hidden
+    }
+
+    .dashboard {
+        @apply w-full h-full bg-[#ffffff] shadow-2xl flex
+    }
+
+    .menu {
+        @apply w-[24%] h-full bg-[#f8f8fa] border-[1px] border-[#f1f2f2]
+    }
+
+    .menu_container {
+        @apply w-full h-[97%] flex items-center flex-col justify-between
+    }
+
+    .logo {
+        @apply h-[15%] flex items-center justify-center font-bold gap-3
+    }
+
+    .menu_logo {
+        @apply w-[18%]
+    }
+
+    .logo_image {
+        @apply rounded-[39px]
+    }
+
+    .icons {
+        @apply flex flex-col gap-[1.7rem] text-[#909098] my-0 mx-[2.7rem]
+    }
+
+    .menu_icon {
+        @apply flex items-center gap-2 rounded-2xl cursor-pointer transition ease-in-out duration-500 hover:scale-105
+    }
+
+    .icon {
+        @apply w-[9%]
+    }
+
+    .friends {
+        @apply flex items-center gap-2
+    }
+
+    .friend_profit {
+        @apply flex items-center text-[#1cb23c] bg-[#e6f2eb] gap-1 py-[3px] px-[7px] rounded-[14px]
+    }
+
+    .box {
+        @apply w-[76%] h-[18%] flex flex-col justify-center gap-[1.3rem] bg-[#6c5dd3] text-white rounded-2xl py-0 px-[6%]
+    }
+
+    .box_btn {
+        @apply w-[50%] h-[26%] bg-white flex items-center justify-center rounded-3xl cursor-pointer transition ease-in-out duration-500 hover:scale-105 hover:bg-[#fbfbfb]
+    }
+
+    .box_btn_text {
+        @apply text-[72%] text-black font-medium
+    }
+
+    .box_title {
+        @apply w-[90%]
+    }
+
+    .box_title_text {
+        @apply text-[100%]
+    }
+
+    .header {
+        @apply w-full
+    }
+
+    .navbar {
+        @apply flex items-center justify-between
+    }
+
+    .search_container {
+        @apply w-[27%] flex flex-col items-start gap-2
+    }
+
+    .search {
+        @apply w-full flex border-none rounded-lg bg-[#f4f4f4] items-center py-0 px-[3%]
+    }
+
+    .search_result {
+        @apply shadow-amber-300 text-black rounded-sm py-[4px] px-[11px]
+    }
+
+    .search_input {
+        @apply flex-1 py-2 px-4 border-none outline-none bg-[#f4f4f4]
+    }
+
+    .user_info {
+        @apply flex items-center justify-end gap-[1rem]
+    }
+
+    .notification {
+        @apply w-[81%] border-[12px] border-white rounded-[30px] shadow-md cursor-pointer transition ease-in-out duration-500 hover:animate-pulse
+    }
+
+    .notification_img {
+        @apply bg-white
+    }
+
+    .notification_drop {
+        @apply w-[12%]
+    }
+
+    .notification_container {
+        @apply flex flex-col items-center
+    }
+
+    .all_notification {
+        @apply w-[17%] h-[27%] bg-white absolute mt-[3.4%] ml-[-5%] mr-[-5%] rounded-[16px] shadow-2xl flex items-start justify-start py-[8px] px-[8px] font-Hind
+    }
+    .user_notification {
+        @apply w-[20%] h-[43%] flex flex-col items-center bg-white shadow-2xl rounded-xl absolute mt-[3.5rem] mr-[13%] gap-3 py-[1.5%] overflow-y-scroll cursor-auto
+    }
+    .notification_count{
+        @apply w-[96%]
+    }
+    .notification_contents{
+        @apply w-full h-full flex flex-col gap-2
+    }
+    .notification_content{
+        @apply w-full h-[20%] flex justify-between items-center cursor-pointer rounded-lg overflow-hidden py-[28px] px-[7px] font-semibold shadow-sm transition ease-in-out duration-500 hover:bg-[#f9f9f9]
+
+    }
+    .notification_message{
+
+    }
+    .notification_date{
+        @apply text-[#8997aa]
+    }
+
+    .users_icon {
+        @apply w-[10%] cursor-pointer flex flex-col items-center gap-[1rem]
+    }
+
+    .user_icon {
+        @apply rounded-[30px] gap-1 transition ease-in-out duration-500 hover:scale-105
+    }
+
+    .drop_down_icon {
+        @apply cursor-pointer
+    }
+
+    .user_drop {
+        @apply w-[20%] h-[43%] flex flex-col items-center justify-between bg-white shadow-2xl rounded-xl absolute mt-[3.5rem] mr-[13%] gap-3 py-[1.5%]
+    }
+
+    .dropDown_container {
+        @apply w-[80%] flex flex-col gap-[1rem]
+    }
+
+    .user_profile_setting {
+        @apply text-[#868b90] cursor-pointer
+    }
+
+    .user_profile {
+        @apply font-bold
+    }
+
+    .top_container {
+        @apply w-full h-full flex items-baseline justify-between
+    }
+
+    .Info {
+        @apply w-[55%] h-[88%] bg-white flex flex-col items-center justify-between rounded-2xl shadow-info
+    }
+
+    .Balance {
+        @apply w-[97%] h-[90%] bg-[#6c5dd3] rounded-xl flex items-center gap-[1rem] py-0 px-[1rem] mt-[1%]
+    }
+
+    .transfer_icon {
+        @apply w-[5%] h-[25%] text-[#d9d6f3] bg-[#988ee0] text-[70%] flex justify-center items-center rounded-[16px] cursor-pointer transition ease-in-out duration-500 hover:scale-105 hover:bg-[#9991d5]
+    }
+
+    .balance_title {
+        @apply text-[#fe9e5d] font-semibold text-xl
+    }
+
+    .bnb {
+        @apply text-[71%]
+    }
+
+    .usd {
+        @apply text-[#b6aee9]
+    }
+
+    .balance_usd {
+        @apply text-white text-xl font-semibold
+    }
+
+    .high_activity {
+        @apply w-[86%]
+    }
+
+    .bottom {
+        @apply w-full h-full flex items-center justify-evenly
+    }
+
+    .bottom_box {
+        @apply w-[30%] h-[83%] border-[1px] border-[#f0f0f0] rounded-2xl flex flex-col items-center justify-center gap-1
+    }
+
+    .box_value {
+        @apply flex items-center gap-2 text-[#808191]
+    }
+
+    .main_icon {
+        @apply w-[12%] rounded-[19px]
+    }
+
+    .box_bottom_value {
+        @apply font-bold
+    }
+
+    .main_left {
+        @apply h-full flex flex-col gap-[1.5rem] py-[1.5rem] px-[2rem] pb-0
+    }
+
+    /*table*/
+    .currency {
+        @apply w-0
+    }
+
+    .thead {
+        @apply bg-[#eff2f5] text-[#b6b8c2]
+    }
+
+    .currency_info_title {
+        @apply px-6 py-3 font-normal
+    }
+
+    .currency_info {
+        /*py-8*/
+        @apply text-center font-normal py-8 px-6 pl-[0.42rem]
+    }
+
+    .btc {
+        @apply text-[#7f8090]
+    }
+
+    .up {
+        @apply text-[#1cb23c]
+    }
+
+    .down {
+        @apply text-[#ff3132]
+    }
+
+    .btc_container {
+        @apply w-full flex items-center justify-center gap-[.3rem]
+    }
+
+    .currency_icon {
+        @apply w-[27%]
+    }
+
+    .star {
+        @apply text-[#ababb6] cursor-pointer
+    }
+
+    .status_icon {
+        @apply w-[15px]
+    }
+
+    .table_child {
+        @apply [&>*:nth-child(even)]:bg-[#f9f9fb]
+    }
+
+    .btn {
+        @apply flex items-center gap-2
+    }
+
+    .deposit_btn {
+        @apply flex items-center gap-3 border-[1px] border-[#e4e4e4] bg-white font-bold py-[16px] px-[26px] rounded-[19px] cursor-pointer transition ease-in-out duration-500 hover:scale-105 hover:bg-[#fbfbfb]
+    }
+
+    .withdraw_btn {
+        @apply flex items-center justify-center gap-3 text-white bg-[#6c5dd3] font-bold py-[16px] px-[26px] rounded-[19px] cursor-pointer transition ease-in-out duration-500 hover:scale-105 hover:bg-[#695eb5]
+    }
+
+
+    /*    bottom*/
+    .bottom_container {
+        @apply h-[53%] flex items-center justify-between
+    }
+
+    .table_container {
+        @apply h-[99%] overflow-y-scroll
+    }
+
+    .news {
+        @apply w-[29%] h-[88%] flex flex-col
+    }
+
+    .news_title {
+        @apply font-semibold
+    }
+
+    .new_coin_modal {
+        @apply h-full
+    }
+
+    .new_coin {
+        @apply h-full flex items-center justify-around gap-[1rem] cursor-pointer transition ease-in-out duration-500 hover:scale-105 hover:bg-[#fbfbfb]
+    }
+
+    .new_coin_icon {
+        @apply w-[100%] rounded-[17px]
+    }
+
+    .new_coin_title {
+        @apply flex flex-col gap-1
+    }
+
+    .icon_info {
+        @apply w-full flex items-center gap-[1rem]
+    }
+
+    .coin_icon_container {
+        @apply w-[11%]
+    }
+
+    .timestamp {
+        @apply text-[#808191] text-[74%]
+    }
+
+    .arrow_right {
+        @apply text-[74%]
+    }
+
+    .hr {
+        @apply w-full h-[1px] bg-[#f2f2f3]
+    }
+
+    .dropDown_hr {
+        @apply w-[83%] h-[1px] bg-[#f2f2f3]
+    }
+    .notification_hr {
+        @apply w-full h-[1px] bg-[#f2f2f3]
+    }
+
+    .DropDown_icons {
+        @apply flex items-center gap-3
+    }
+
+    .DropDown_icon {
+        @apply w-[7%]
+    }
+
+    .logout {
+        @apply w-[84%]
+    }
+
+    .charts {
+        @apply flex flex-col items-center gap-[2rem]
+    }
+
+    .deposit_body {
+        @apply w-[33%] h-[89%] rounded-[15px] p-6 bg-[#f2f2f2]
+    }
+
+    .info_body {
+        @apply w-[30%] h-[49%] rounded-[15px] p-6 bg-white
+    }
+
+    .withdraw_body {
+        @apply w-[38%] h-[78%] rounded-[15px] p-6 bg-white
+    }
+
+    .close_modal {
+        @apply flex justify-end
+    }
+
+    .deposit_body_container {
+        @apply h-full flex flex-col gap-[1rem] font-Hind
+    }
+
+    .close_deposit {
+        @apply w-6 h-6 cursor-pointer
+    }
+
+    .deposit_title {
+        @apply text-2xl font-bold
+    }
+
+    .withdraw_title {
+        @apply w-full text-2xl font-bold text-center
+    }
+
+    .deposit_description {
+        @apply w-full text-[84%]
+    }
+
+    .deposit_types {
+        @apply w-full h-[10%] bg-[#e0e0e0] rounded-[24px]
+    }
+
+    .deposit_type {
+        @apply w-full h-full flex items-center justify-center gap-3
+    }
+
+    .deposit_top {
+        @apply flex flex-col gap-[0.4rem]
+    }
+
+    .wallet {
+        @apply bg-[#3c97e5] text-white py-[2%] px-[18%] rounded-[19px] font-semibold cursor-pointer
+    }
+
+    .Phone {
+        @apply bg-transparent py-[1.6%] px-[18%] rounded-[19px] font-semibold cursor-pointer
+    }
+
+    .Network {
+        @apply w-full flex justify-center gap-2 font-semibold
+    }
+
+    .Network_list {
+        @apply border-[1px] border-[#a8a7a8] rounded-md cursor-pointer
+    }
+
+    .qr {
+        @apply flex justify-center
+    }
+
+    .qr_img {
+        @apply w-[50%] cursor-pointer
+    }
+
+    .wallet_address {
+        @apply flex flex-col items-center gap-2 text-[#78777a]
+    }
+
+    .wallet_address_title {
+        @apply text-black font-semibold
+    }
+
+    .wallet_btns {
+        @apply flex flex-col items-center gap-3
+    }
+
+    .copy_address {
+        @apply flex items-center justify-center w-full h-full border-[1px] border-[#92c2eb] text-[#459be5] p-[11px] rounded-[11px] cursor-pointer
+    }
+
+    .share_address {
+        @apply flex items-center justify-center w-full h-full bg-[#3c97e5] text-white p-[11px] rounded-[11px] cursor-pointer
+    }
+
+    .Modal_container {
+        @apply container flex justify-center mx-auto
+    }
+
+    .Modal_box {
+        @apply h-[109%] absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50 cursor-auto
+    }
+    .logout_modal_box {
+        @apply h-full fixed inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50 cursor-auto
+    }
+
+    .event {
+        @apply w-full flex items-center gap-2
+    }
+
+    /*    withdraw*/
+    .withdraw_description {
+        @apply text-[#adafb3]
+    }
+
+    .withdrawModal_top {
+        @apply h-[20%] gap-[.5rem] flex flex-col items-center justify-center
+    }
+
+    .withdraw_form {
+        @apply flex flex-col gap-[.8rem]
+    }
+
+    .withdraw_input {
+        @apply outline-none border-[1px] border-[#ededf1] py-[2%] px-[1.5%] rounded-xl
+    }
+
+    .submit_withdraw {
+        @apply bg-[#6f40f3] text-white font-bold p-[3%] rounded-xl transition ease-in-out duration-500 hover:bg-[#704dd1] focus:animate-pulse font-Hind
+    }
+
+    .withdraw_footer {
+        @apply flex flex-col items-center gap-[1.3rem]
+    }
+
+    .withdraw_footer_description {
+        @apply w-full text-center text-[97%] text-[#999da8] font-semibold
+    }
+
+    .privacy {
+        @apply text-[#6f40f3] cursor-pointer transition ease-in-out duration-500 hover:text-[#6b47d1]
+    }
+
+    .document {
+        @apply text-[#6f40f3] font-semibold cursor-pointer transition ease-in-out duration-500 hover:text-[#6b47d1]
+    }
+
+    .loading {
+        @apply w-full flex items-center justify-center
+    }
+
+    .loading_trade {
+        @apply w-full flex items-center justify-center
+    }
+
+    .loading_animate {
+        @apply animate-ping bg-sky-500 h-3 w-3 rounded-full
+    }
+
+    /*    orders*/
+    .order_title {
+        @apply font-bold
+    }
+
+    .filter {
+        @apply flex items-center justify-center gap-2 bg-[#f7f7f8] py-[10px] px-[18px] text-[84%] rounded-md cursor-pointer font-Noto
+    }
+
+    .Total {
+        @apply font-Noto
+    }
+
+    .Total_number {
+        @apply font-PT
+    }
+
+    .order__input {
+        @apply w-[19%] flex items-center justify-between
+    }
+
+    .order_input {
+        @apply border-none outline-none
+    }
+
+    .orders_table_container {
+        @apply max-h-[500px] overflow-auto
+    }
+
+    .table {
+        @apply w-full table-auto overflow-x-scroll
+    }
+
+    .order_th {
+        @apply font-normal cursor-pointer
+    }
+
+    .order_td {
+        @apply text-center py-3 font-light
+    }
+
+    .orders_thead {
+        @apply h-[3rem] bg-[#f6f6f7] text-[#7a7a90]
+    }
+
+    .order_status {
+        @apply flex items-center justify-center gap-[.3rem]
+    }
+
+    .other_action {
+        @apply flex items-center gap-3 absolute bg-white shadow-2xl ml-[-4%] mt-[2%] rounded-[5px]
+    }
+
+    .destroy_body {
+        @apply w-[33%] h-[32%] rounded-[15px] p-6 bg-white
+    }
+
+    .destroy_containers {
+        @apply flex flex-col items-center gap-6
+    }
+
+    .destroy_container {
+        @apply flex flex-col items-center gap-1
+    }
+
+    .destroy_svg {
+        @apply mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200
+    }
+
+    .destroy_title {
+        @apply text-[1.3rem] font-bold
+    }
+
+    .confirm_button {
+        @apply text-sm text-white bg-red-600 px-5 py-2.5 text-center font-medium rounded-lg cursor-pointer
+    }
+
+    .cancel_button {
+        @apply text-sm text-gray-500 bg-white px-5 py-2.5 text-center font-medium rounded-lg border border-gray-200 cursor-pointer
+    }
+
+    .edit_container {
+        @apply w-full h-full flex flex-col items-center gap-3
+    }
+
+    .edit_body {
+        @apply w-[33%] h-[78%] rounded-[15px] p-6 bg-white
+    }
+
+    .edit_title_container {
+        @apply flex items-center justify-between
+    }
+
+    .edit_input_container {
+        @apply w-full flex flex-col gap-2 items-start
+    }
+
+    .edit_form {
+        @apply flex flex-col gap-3 w-full
+    }
+
+    .edit_form_top_container {
+        @apply w-full flex flex-col gap-2
+    }
+
+    .edit_input {
+        @apply bg-[#f7f7f7] border-[1px] border-[#e3e3e3] outline-none w-full rounded-sm py-1
+    }
+
+    .edit_button_container {
+        @apply flex flex-row-reverse justify-center items-center gap-3
+    }
+
+    .save_btn {
+        @apply bg-[#97bb3d] text-white py-2 px-7 rounded-md font-medium
+    }
+
+    .theme {
+        @apply text-[136%]
+    }
+
+    .inviteFriends {
+        @apply w-full h-full flex flex-col items-center bg-gray-100
+    }
+
+    .invite {
+        @apply w-[99%] h-[41%] bg-white text-[#98a6ad] rounded-md flex flex-col justify-center gap-[1.3rem] px-[1rem] shadow-md font-normal
+    }
+
+    .inviteUrl {
+        @apply text-[#3bafda]
+    }
+
+    .not_verify{
+        @apply w-full flex items-center justify-center gap-2 font-Hind
+    }
+    /*trade*/
+    .trade {
+        @apply w-full h-full overflow-hidden flex
+    }
+
+    .Markets {
+        @apply w-[50%] h-full border-r-[1px] border-[#f8f8f9]
+    }
+
+    .Market_container {
+        @apply w-[98%] h-full flex flex-col items-start justify-evenly
+    }
+
+    .Market_top_view {
+        @apply w-full flex items-center justify-between
+    }
+
+    .search_currency_container {
+        @apply flex items-center justify-between text-[#d9d9df]
+    }
+
+    .search_currency {
+        @apply border-none outline-none px-[5px]
+    }
+
+    .Market_list {
+        @apply w-[98%] h-[6%] bg-[#fafafb] border-[1px] border-[#f3f4f6] text-[#bcbeca] cursor-pointer flex items-center justify-evenly rounded-sm
+    }
+
+    .market_hr {
+        @apply w-[1px] h-full bg-[#edeef1]
+    }
+
+    .symbol_list {
+        @apply w-full flex items-center justify-evenly
+    }
+
+    .symbol_setting {
+        @apply w-[20%] h-full flex items-center justify-center gap-[1rem]
+    }
+
+    .market_setting {
+        @apply transition ease-in-out duration-500 transform hover:rotate-90
+    }
+
+    .box_container {
+        @apply w-full h-[30%] flex flex-col overflow-scroll gap-[.6rem]
+    }
+
+    .currency_box_container {
+        @apply w-full h-[25%] overflow-y-scroll flex flex-col gap-[.5rem]
+    }
+
+    .currency_box {
+        @apply w-full h-[35%] border-[2px] border-[#f4f5f7] font-Hind flex items-center justify-between px-[13px] rounded-md cursor-pointer transition ease-in-out duration-500 hover:bg-[#f7f6f6]
+    }
+
+    .currency_box_focus {
+        @apply bg-[#f7f6f6]
+    }
+
+    .symbol_price {
+        @apply w-[60%] flex items-start gap-[1rem]
+    }
+
+    .name {
+        @apply flex flex-col gap-[1px]
+    }
+
+    .crypto_symbol {
+        @apply font-bold
+    }
+
+    .price {
+        @apply text-[#cdcfd8]
+    }
+
+    .status {
+        @apply text-[#b2a1fc] flex items-center gap-1
+    }
+
+    .currency_actions {
+        @apply w-full flex items-center justify-evenly font-Hind font-semibold text-[#b7bac5]
+    }
+
+    .currency_action {
+        @apply cursor-pointer
+    }
+
+    .trade_form_container {
+        @apply w-full
+    }
+
+    .trade_form {
+        @apply w-full h-[27%] flex flex-col items-center gap-[1.5rem]
+    }
+
+    .select_wallet {
+        @apply w-[88%] bg-[#fcfcfd] border-[2px] border-[#f6f7f8] cursor-pointer outline-none p-[10px] text-[#9095a7]
+    }
+
+    .trade_form_input_container {
+        @apply w-full flex flex-col items-center gap-[.5rem] font-Hind font-medium
+    }
+
+    .trade_form_input_label {
+        @apply w-[87%] flex items-start justify-between text-[#9095a7]
+    }
+
+    .trade_receive_amount {
+        @apply text-[#6e748c] font-semibold
+    }
+
+    .wallet_input {
+        @apply w-[88%] bg-[#f6f7f8] outline-none p-[10px]
+    }
+
+    .buy_currency {
+        @apply w-[88%] text-white bg-[#5e3bfa] p-[8px] rounded-sm font-semibold
+    }
+
+    .sell_currency {
+        @apply w-[88%] text-white bg-[red] p-[8px] rounded-sm font-semibold
+    }
+
+    /*main trade*/
+    .main_content {
+        @apply w-full h-full flex flex-col items-start
+    }
+
+    .trade_main_container {
+        @apply w-[97%] h-full flex justify-start gap-[1rem]
+    }
+
+    .currency_price {
+        @apply flex flex-col font-semibold font-Hind px-[12px] gap-1
+    }
+
+    .currency_title {
+        @apply text-[#b5b7c4]
+    }
+
+    /*text-[#2ecc71]*/
+    .currency_status {
+        @apply flex items-center gap-1 text-[77%] cursor-pointer
+    }
+
+    .status_container {
+        @apply flex items-center gap-[1rem]
+    }
+
+    .now_price {
+        @apply text-[116%] cursor-pointer
+    }
+
+    .status_boxes {
+        @apply w-[72%] flex justify-evenly gap-[7px]
+    }
+
+    .status_box {
+        @apply w-[67%] h-[10%] border-[2px] border-[#f3f3f5] rounded-sm flex flex-col justify-center px-2 font-semibold font-Hind shadow-sm cursor-pointer p-[34px]
+    }
+
+    .fourth_box {
+        @apply w-[20%]
+    }
+
+    .trade_currency_info {
+        @apply text-[#c7cad3] text-[75%] font-medium
+    }
+
+    /*order*/
+    .currency_order_table_container {
+        @apply w-full h-[49%] text-[#1d1d1d0a] font-Hind border-r-[1px] border-r-[#1d1d1d0a] overflow-y-scroll rounded-sm flex flex-col gap-[1rem]
+    }
+
+    .order_nav_container {
+        @apply text-black flex items-center justify-around
+    }
+
+    .order_table_header {
+        @apply w-[87%] flex items-center justify-around text-[#bebebe]
+    }
+
+    .order_table_none {
+        @apply w-full h-full flex flex-col items-center justify-center text-[#bebebe]
+    }
+
+    .currency_order_nav_icon {
+        @apply w-[13%] flex items-center justify-center gap-[.70rem] cursor-pointer
+    }
+
+    .amount_field {
+        @apply gap-[2rem]
+    }
+
+    .order_table_main {
+        @apply w-[13%] text-center
+    }
+
+    .order_table_header_nav {
+        @apply w-[30%]
+    }
+
+    .cancel_order {
+        @apply w-full text-[#01BC8D] cursor-pointer
+    }
+
+    .cancel_all {
+        @apply flex items-center gap-1
+    }
+
+    /*    setting*/
+    .settings {
+        @apply w-full h-full
+    }
+
+    .setting_container {
+        @apply w-full h-full flex flex-col gap-[1.4rem]
+    }
+
+    .setting_top_section {
+        @apply flex flex-col gap-1
+    }
+
+    .setting_title {
+        @apply font-bold
+    }
+
+    .setting_description {
+        @apply text-[#c8c8ca] text-[100%]
+    }
+
+    .items_container {
+        @apply flex flex-col gap-[1rem]
+    }
+
+    .setting_menu_title {
+        @apply flex items-center gap-[1.5rem] text-[#c9c9cb]
+    }
+
+    .after {
+        @apply text-[#707081]
+    }
+
+    .symbol_focus {
+        @apply bg-[#5e3bfa] text-white py-[2px] px-[10px] rounded-[10px]
+    }
+
+    .user_info_setting {
+        @apply w-full h-[18%] flex items-center justify-between px-[20px]
+    }
+
+    .setting_user_icon {
+        @apply w-[12%]
+    }
+
+    .menu_items {
+        @apply flex items-center gap-3 cursor-pointer
+    }
+
+    .setting_hr {
+        @apply w-[27%] h-[2px] bg-[#f2f2f3]
+    }
+
+    .setting_main {
+        @apply w-[94%] h-[89%] border-[2px] border-[#f7f7f7] rounded-sm
+    }
+
+    .full_name {
+        @apply font-bold
+    }
+
+    .upload_picture {
+        @apply bg-[#f3ecfe] text-[#7c48b4] font-semibold py-[13px] px-[26px] rounded-md cursor-pointer transition ease-in-out duration-500 hover:bg-[#ece9f0]
+    }
+
+    .forms {
+        @apply flex items-center justify-between
+    }
+
+    .basic_form_container {
+        @apply h-full flex flex-col gap-[1.5rem]
+    }
+
+    .type {
+        @apply flex flex-col gap-2 px-[20px]
+    }
+
+    .basic_title {
+        @apply font-semibold
+    }
+
+    .basic_description {
+        @apply text-[#c9c9c9] font-normal
+    }
+
+    .basic_form {
+        @apply h-full flex flex-col justify-center items-start gap-[1.4rem] px-[20px] font-catamaran
+    }
+
+    .setting_top_container {
+        @apply w-full flex items-center justify-between
+    }
+
+    .top_input {
+        @apply flex flex-wrap gap-5
+    }
+
+    .input_container {
+        @apply w-[23%] flex flex-col gap-2 font-normal
+    }
+
+    .area_container {
+        @apply w-[48%] flex flex-col gap-2 font-normal
+    }
+
+    .basic_input {
+        @apply w-full outline-none border-[1px] border-[#f3f3f3] p-[8px] rounded-md
+    }
+
+    .basic_area {
+        @apply w-full outline-none border-[1px] border-[#f3f3f3] p-[8px] rounded-md
+    }
+
+    .save_button {
+        @apply w-[14%] bg-[#9140f7] text-[#f0d8fb] py-[10px] px-[21px] rounded-md font-semibold font-catamaran
+    }
+
+    .success {
+        @apply text-[green]
+    }
+
+    .warning {
+        @apply text-[red]
+    }
+
+    /*    notifications*/
+    .notifications {
+        @apply w-full h-full flex justify-center items-center
+    }
+
+    .notification_form_container {
+        @apply flex flex-col items-center
+    }
+
+    .notification_type_title {
+        @apply text-[#6f6f6f] font-semibold
+    }
+
+    .notification_type_description {
+        @apply w-full text-center text-[#9c9c9c]
+    }
+
+    .notification_container {
+        @apply flex flex-col items-end gap-[2rem]
+    }
+
+    .notification_type_container {
+        @apply flex items-center gap-[2rem]
+    }
+
+    .switch_container {
+        @apply flex items-center justify-around gap-[15px]
+    }
+
+    .switch {
+
+    }
+
+    .notification_button_container {
+        @apply w-full flex justify-center
+    }
+
+    .submit_notification {
+        @apply bg-[#4a88ce] text-white py-[7px] px-[30px] rounded-md
+    }
+
+    .profile_update {
+        @apply text-[#71b471]
+    }
+
+    /*    security*/
+    .security {
+        @apply w-full h-full flex flex-col items-start justify-start bg-gray-100 py-[20px] px-[20px] gap-10 rounded-md
+    }
+
+    .forgotPassword {
+        @apply w-[62%] h-[60%] bg-white shadow-sm rounded-md flex flex-col gap-[2rem] py-[20px] px-[20px]
+    }
+
+    .security_form_container {
+        @apply h-full flex flex-col gap-[1.2rem]
+    }
+
+    .security_input_container {
+        @apply w-full h-[23%] flex flex-col gap-2
+    }
+
+    .password_input {
+        @apply w-[57%] h-[54%] border-[1px] border-gray-300 rounded-md shadow-sm focus:outline-none px-[8px]
+    }
+
+    .new_password_submit {
+        @apply w-[17%] px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest
+    }
+
+    .authentication {
+        @apply w-[62%] h-[36%] bg-white shadow-sm rounded-md flex flex-col gap-[2rem] py-[20px] px-[20px]
+    }
+
+    .authentication_title {
+        @apply text-lg font-medium text-gray-900
+    }
+
+    .authentication_description {
+        @apply max-w-xl text-sm text-gray-600
+    }
+
+    .enable_authentication {
+        @apply w-[12%] px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest cursor-pointer flex justify-center items-center
+    }
+
+    .validation_error {
+        @apply text-red-600
+    }
+
+    /*    billing*/
+    .billing {
+        @apply w-full h-full flex justify-center items-center
+    }
+
+    .billing_title {
+        @apply font-bold
+    }
+
+    .billing_form_container {
+        @apply w-full h-full flex flex-col items-center justify-center gap-3
+    }
+
+    .billing_form {
+        @apply w-[75%] h-[75%] bg-[#fcfcfc] border-[1px] border-[#f2f2f2] rounded-xl
+    }
+
+    .input_groups {
+        @apply w-full h-full flex flex-col items-center justify-center gap-5 font-Hind
+    }
+
+    .input_group {
+        @apply w-full flex items-center justify-center gap-3
+    }
+
+    .financial_input_container {
+        @apply w-[33%] flex flex-col justify-center gap-1
+    }
+
+    .financial_input {
+        @apply w-full p-[9px] outline-none border-[1px] border-[#e3e6ea] rounded-xl text-[#c3c3c3]
+    }
+
+
+    /*login*/
+    .login_page {
+        @apply w-full h-full bg-[#eef1f7] flex items-center justify-center
+    }
+
+    .login {
+        @apply w-[38%] h-[86%] bg-white rounded-md
+    }
+
+    .login_container {
+        @apply w-full h-full flex flex-col items-center justify-center gap-9 font-Hind
+    }
+
+    .login_top {
+        @apply flex flex-col items-center
+    }
+
+    .login_title {
+        @apply font-bold text-[128%]
+    }
+
+    .login_description {
+        @apply text-[#dddddf]
+    }
+
+    .login_form {
+        @apply w-full h-[45%] flex flex-col items-center justify-evenly gap-[.9rem]
+    }
+
+    .login_input {
+        @apply w-[65%] bg-[#fafafc] border-[1px] border-[#f4f5f7] focus:outline-none rounded-sm py-[8px] px-[12px]
+    }
+
+    .login_button {
+        @apply w-[65%] flex flex-col items-center gap-3
+    }
+
+    .normal_login {
+        @apply w-full bg-[#2b5abe] text-white rounded-md px-7 py-2 transition ease-in-out duration-500 hover:bg-[#2a57b9]
+    }
+
+    .google_login {
+        @apply w-full bg-white text-black border-[1px] border-[#f4f5f7] rounded-md px-7 py-2 cursor-pointer flex items-center justify-center gap-[.5rem] transition ease-in-out duration-500 hover:bg-[#fbfbfb]
+    }
+
+    .google_icon {
+        @apply w-[6%]
+    }
+
+    .none_register {
+        @apply flex items-center gap-[1rem] font-semibold
+    }
+
+    .none_login {
+        @apply text-[#dbdadf]
+    }
+
+    .signup_title {
+        @apply text-[#2b5abe] cursor-pointer
+    }
+
+    .login_action {
+        @apply w-[65%] flex items-center justify-between
+    }
+
+    .remember_container {
+        @apply flex flex-row-reverse items-center gap-[.5rem]
+    }
+
+    .remember {
+        @apply text-[#a39696] cursor-pointer
+    }
+
+    .remember_checkbox {
+        @apply cursor-pointer
+    }
+
+    .recovery {
+        @apply text-[#2b5abe] cursor-pointer
+    }
+
+    /*    more coin info*/
+    .more_info{
+        @apply flex items-center justify-between
+    }
+    .more_info_title{
+        @apply text-[#747474]
+    }
+    .more_info_value{
+        @apply text-[#968e8e]
+    }
+}
